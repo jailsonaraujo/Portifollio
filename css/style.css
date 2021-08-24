@@ -100,7 +100,12 @@
     width: 20%;
     height: 10rem;
     align-items: center;
+    transition: ease all 1s;
 }
+/* #cards1{animation: animeCards  infinite; transition: all 1s;}
+#cards2{animation: animeCards infinite; transition: 2s;}
+#cards3{animation: animeCards infinite; transition: 3s;} */
+
 .card-itens > p{
     width: 100%;
     color: #795f92;
@@ -123,15 +128,17 @@
     font-size:8rem;
     color: #969619;
 }
-progress {
-    border: solid 2px #795f92;
+.progPrimary{
     width: 100%;
-    height: 1rem;
-    border-radius: 1rem;
+    height: .7rem;
+    border: solid 2px #795f92;
+    border-radius: 10px;
 }
-progress::-webkit-progress-value {
-    background: #0f0;
-    border-radius: 1rem;
+.progSecondary{
+    width: 0%;
+    height: 100%;
+    background-color: #0f0;
+    border-radius: 10px;
 }
 
 
