@@ -78,6 +78,7 @@
     height: auto;
     font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 3rem 0;
 }
 
 #titulo{
@@ -104,9 +105,6 @@
     align-items: center;
     box-shadow: 0rem 0rem 2rem #727171;
 }
-/* #cards1{animation: animeCards  infinite; transition: all 1s;}
-#cards2{animation: animeCards infinite; transition: 2s;}
-#cards3{animation: animeCards infinite; transition: 3s;} */
 
 .card-itens > p{
     width: 100%;
