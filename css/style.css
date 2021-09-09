@@ -79,6 +79,7 @@
     font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 3rem 0;
+    background-color: #000;
 }
 
 #titulo{
@@ -104,6 +105,7 @@
     height: 10rem;
     align-items: center;
     box-shadow: 0rem 0rem 2rem #727171;
+    border-radius: 10px;
 }
 
 .card-itens > p{
@@ -200,7 +202,7 @@
     top: 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .menu-link{
         width: 40%;
         animation: animaMenu 1s;
@@ -224,7 +226,7 @@
         align-items: center;
     }
     .card-itens{
-        width: auto;
+        width: 50%;
         height: 10rem;
         margin: 4rem 0 1rem 0;
     }
