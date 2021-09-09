@@ -80,6 +80,8 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 3rem 0;
     background-color: #000;
+    border-bottom: solid 8px #727171;
+    border-top: solid 8px #727171;
 }
 
 #titulo{
@@ -89,7 +91,7 @@
 }
 #titulo h1{
     border-bottom: solid 3px;
-    color: #795f92;
+    color: #fff;
 }
 #cards{
     margin-top: 2rem;
@@ -110,7 +112,7 @@
 
 .card-itens > p{
     width: 100%;
-    color: #795f92;
+    color: #fff;
     text-align: center;
 }
 .card-itens > i{
@@ -154,6 +156,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #2e3e4e;
     padding: 1rem 0 1rem 0; 
+    background-color: #000;
 }
 #titulo-projetos{
     margin-top: 2rem;
@@ -162,7 +165,7 @@
 }
 #titulo-projetos h1{
     border-bottom: solid 3px;
-    color: #ef664d;
+    color: #fff;
 }
 #card-projetos{
     width: 100%;
@@ -200,6 +203,44 @@
     width: 100%;
     height: 100%;
     top: 0;
+}
+
+/* FORMATAÇÃO RODAPE */
+#rodape{
+    width: 100%;
+    background-color: #000;
+    border-bottom:solid 8px #727171;
+    border-top:solid 8px #727171;
+    padding: 2rem 0;
+}
+#rodape > h1{
+    color: #727171;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#rodape > p{
+    margin-top: 1rem;
+    color: #727171;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#rede-sociais{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #727171;
+    padding: 2rem 0;
+}
+#rede-sociais .fab{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #727171;
+}
+#rede-sociais .fab:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 @media screen and (max-width: 900px) {
