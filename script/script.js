@@ -36,7 +36,7 @@ var tamanho2=0;
 
 function animaProg2(){
     if(tamanho2>=width2){
-        clearInterval(intervalo);
+        clearInterval(intervalo2);
     }else{
         tamanho2++;
         progSecondary2.style.width=tamanho2+"%";
