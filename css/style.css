@@ -1,327 +1,250 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Rubik:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,500;1,400;1,500;1,700&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
-#nav{
-    width: 100%;
+nav{
+    width: 30%;
     height: 100vh;
-    background-color: #000;
-    position: relative;
-    z-index: 100;
+    background-color: #335384;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    float: left;
+    position: fixed;
 }
-#nav img{
+
+#img-container{
+    width: 40%;
+    height: 13rem;
+    border: solid 5px #777;
+    border-radius: 10px;
+}
+#img-container img{
     width: 100%;
     height: 100%;
-    opacity: .3;
-}
-#img-perfil{
-    width: 60%;
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #600a69a9;
-    box-shadow: 0rem 0rem 2rem #fff;
-    padding: 2rem;
-    border-top-left-radius: 10rem;
-    border-bottom-right-radius: 10rem;
-}
-#img-perfil h1{
-    color: #fff;
-    font-size: 3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-}
-#img-perfil p{
-    color: #ccc;
-    font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
-}
-#img-perfil img{
-    width: 35%;
-    height: 20rem;
-    opacity: 1;
-    border-radius: 15px;
-    box-shadow: 0rem 0rem 2rem #fff;
-}
-.menu-link{
-    width: 20%;
-    height: 100vh;
-    background-color: #8a2be2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 1rem 0 1rem;
-}
-.menuL{
-    display: flex;
-    animation: animaMenu 1s;
-}
-@keyframes animaMenu{
-    0%{ 
-        width: 0%;
-    }
-    100%{ 
-        width: 20%;
-    }
+    border-radius: 8px;
 }
 
-#menu-link li{
+/* contatos*************************************************************** */
+#contatos{
+    width: 90%;
+    height:auto;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 100;
+}
+#contatos h1{
+    font-family: Roboto;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+#contatos ul li{
+    margin-top: 1rem;
     list-style: none;
-    margin: 1.5rem;
 }
-#menu-link li a{
+#contatos ul li i{
+    font-size: 1.5rem; 
+    margin-left: 1.5rem;
+}
+#contatos ul li a{
+    color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
-    color: #fff;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-left: 1rem;
 }
-#botao-menu{
-    width: 2rem;
-    height: 1rem;
-    position: fixed;
-    top: 5%;
-    right: 5%;
+
+/* historico academico*************************************************************** */
+#h-academico{
+    width: 90%;
+    height:auto;
+    color: #fff;
+    font-family: Roboto;
+}
+#h-academico h1{
+    font-family: Roboto;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+#h-academico ul li{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+/* conteudos*************************************************************** */
+#conteudos{
+    width: 70%;
+    height: 100vh;
+    float: right;
+    position: relative;
+}
+main{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+/* cabeçalho da pagina*************************************************************** */
+header{
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
-    cursor: pointer;
-}
-#botao-menu:hover{
-    transform: scale(1.2);
-}
-#botao-menu > span{
-    border: solid 1px #ccc;
-    width: 100%;
-    box-shadow: 1px 1px 2px #000;
-}
-
-/* SESSAO DE conhecimentos ##########################################################*/
-#conhecimentos{
-    width: 100%;
-    height: auto;
-    font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 3rem 0;
-    background-color: #000;
-    border-bottom: solid 8px #727171;
-    border-top: solid 8px #727171;
-}
-
-#titulo{
-    margin-top: 2rem;
-    display: flex;
     justify-content: center;
+    align-items: center;
+    position: fixed;
 }
-#titulo h1{
-    border-bottom: solid 3px;
-    color: #fff;
+header h1{
+    font-family: Ubuntu;
+    font-size: 3rem;
+    color: #335384;
+    width: 80%;
+    position: absolute;
+    top: 16rem;
+    z-index: 1;
 }
-#cards{
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+header h3{
+    font-family: Ubuntu;
+    font-size: 2rem;
+    width: 80%;
+    color: #5ba7d1;
+    font-weight: 100;
+    position: absolute;
+    z-index: 1;
+}
+#figura-banner{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(right top, #222, #000);
+}
+#figura-banner img{
+    height: 100%;
+    width: 100%;
+    opacity: .1;
+    object-fit: cover;
+}
+/* habilidades*************************************************************** */
+#habilidades{
     width: 100%;
     height: auto;
+    padding: 1rem 0;
+    background-color: #fff;
+    border-bottom: solid 8px;
     display: flex;
-    justify-content: space-evenly;
-}
-.card-itens{
-    padding: 0 1rem 0 1rem;
-    width: 20%;
-    height: 10rem;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0rem 0rem 2rem #727171;
-    border-radius: 10px;
+}
+#habilidades h1{
+    width: 85%;
+    font-size: 2rem;
+    padding: .5rem 0;
+    text-transform: uppercase;
+    font-family: Roboto;
+    color: #5ba7d1;
+}
+#row-habilidades{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: auto;
+    /* border: solid 1px; */
+}
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 25%;
+    transition: all 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habilidade1 i{
+    font-size: 5rem;
+    color: #eee151;
+}
+.habilidade2 i{
+    font-size: 5rem;
+    color: #6d80b9;
+}
+.habilidade3 i{
+    font-size: 5rem;
+    color: #e47759;
 }
 
-.card-itens > p{
+/* formatação da barra de progresso dos cards na seção habilidades */
+.borda-barra{
     width: 100%;
-    color: #fff;
-    text-align: center;
-}
-.card-itens > i{
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-.fa-html5{
-    font-size:8rem;
-    color: #f00;
-}
-.fa-css3-alt{
-    font-size:8rem;
-    color: #00f;
-}
-.fa-js{
-    font-size:8rem;
-    color: #969619;
-}
-.progPrimary{
-    width: 100%;
-    height: .7rem;
-    border: solid 2px #795f92;
+    height: .5rem;
     border-radius: 10px;
+    border: solid 2px #777;
 }
-.progSecondary{
+.barra{
     width: 0%;
     height: 100%;
     background-color: #0f0;
     border-radius: 10px;
 }
 
-
-
-
-/* SESSAO DE Projetos ##########################################################*/
+/* projetos *************************************************************** */
 #projetos{
     width: 100%;
     height: auto;
-    font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #2e3e4e;
-    padding: 1rem 0 1rem 0; 
-    background-color: #000;
-}
-#titulo-projetos{
-    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #fff;
+    border-bottom: solid 8px;
     display: flex;
-    justify-content: center;
-}
-#titulo-projetos h1{
-    border-bottom: solid 3px;
-    color: #fff;
-}
-#card-projetos{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
-}
-.cards{
-    width: 25%;
-    height: 20rem;
-    box-shadow: 0rem 0rem 2rem #727171;
-    border-radius: 1rem;
-    margin: 1rem 0 1rem 0;
-    cursor: pointer;
-    background-color: #000;
-    position: relative;
-}
-.cards:hover{
-    transform: scale(1.1);
-    transition: 1s;
-}
-.cards img{
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    opacity: .4;
-}
-.cards a{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
 }
-
-/* FORMATAÇÃO RODAPE */
-#rodape{
-    width: 100%;
-    background-color: #000;
-    border-top:solid 8px #727171;
-    padding: 2rem 0;
-}
-#rodape > h1{
-    color: #727171;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-#rodape > p{
-    margin-top: 1rem;
-    color: #727171;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-#rede-sociais{
-    margin: 0 auto;
+#projetos h1{
+    border: solid 1px;
     width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #727171;
-    padding: 2rem 0;
-}
-#rede-sociais .fab{
-    font-size: 3rem;
-    cursor: pointer;
-    color: #727171;
-}
-#rede-sociais .fab:hover{
-    transform: scale(1.1);
-    transition: 1s;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+    font-family: Roboto;
+    color: #5ba7d1;
 }
 
-@media screen and (max-width: 900px) {
-    .menu-link{
-        width: 40%;
-        animation: animaMenu 1s;
+@media screen and (max-width: 700px) {
+    nav{
+        display: none;
+        height: 100vh;
     }
-    @keyframes animaMenu{
-        0%{ 
-            width: 0%;
-        }
-        100%{ 
-            width: 40%;
-        }
-    }
-/* SESSAO DE conhecimentos ***************/
-    #conhecimentos{
+
+    #conteudos{
         width: 100%;
-        height: auto;
+        height: 100vh;
     }
-    #cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-itens{
-        width: 50%;
-        height: 10rem;
-        margin: 4rem 0 1rem 0;
-    }
+}
 
-/* SESSAO DE Projetos **********************/
-    #card-projetos{
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        flex-direction: column;
-    }
+/* animação com dataset ******************************************* */
+[data-anime]{
+    opacity: 0;
+    transition: 2s;
+}
 
-    .cards{
-        width: 80%;
-        height: 10rem;
-        box-shadow: 0rem 0rem 2rem #727171;
-        border-radius: 1rem;
-        
-    }
-    .cards:hover{
-        transform: scale(1.1);
-        transition: 1s;
-    }
+[data-anime="right"]{
+    transform: translate3d(70px, 0, 0);
+}
+
+[data-anime].animation{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }

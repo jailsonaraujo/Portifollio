@@ -9,90 +9,82 @@
   <title>Meu site</title>
 </head>
 <body>
-  <nav id="nav">
-    <img src="img/img1.jpg" alt="">
-    <div id="img-perfil">
-      <img src="img/jailson.png" alt="perfil-jailson">
-      <h1 id="nome">Antonio Jailson Araujo da Costa</h1>
-      <p>Desenvolvedor web Front-end cursando Sistema de informação</p>
+  <nav>
+    <div id="img-container">
+      <img src="img/jailson.png" alt="">
     </div>
-    <ul class="menu-link" id="menu-link">
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#conhecimentos">Conhecimentos</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#rodape">Contatos</a></li>
-    </ul>
+    <section id="contatos">
+      <h1>Contatos</h1>
+      <ul>
+        <li><i class="fab fa-linkedin-in"></i><a href="#">Linkedin</a></li>
+        <li><i class="fab fa-github-square"></i><a href="#">Github</a></li>
+        <li><i class="fas fa-envelope"></i><a href="#">Gmail</a></li>
+      </ul>
+    </section>
 
-    <div id="botao-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
+    <section id="h-academico">
+      <h1>Histórico Acadêmico</h1>
+      <ul>
+        <li>Graduação em Sistema de Informação
+          <span>Instituição: FIED-Faculdade Ieducare
+            Cursando: 6° semestre</span>
+        </li>
+        <li>Ensino Médio Completo e curso técnico em contabilidade
+          <span>Instituição: E.E.E.P. Professor Sebastião Vasconcelos Sobrinho
+            Conclusão: 2015.</span>
+        </li>
+      </ul>
+    </nav>
+  </menu>
 
-  <section class="conhecimentos" id="conhecimentos">
-    <div id="titulo">
-      <h1>Conhecimentos</h1>
-    </div>
+  <div id="conteudos">
+    <header>
+      <h1>Antonio Jailson Araujo da Costa</h1>
+      <h3>Desenvolvedor <span>Front-End</span></h3>
+      <figure id="figura-banner">
+        <img src="img/img1.jpg" alt="banner">
+      </figure>
+    </header>
+
+    <main>
+
+      <section id="habilidades">
+        <h1>Habilidades</h1>
+        <div id="row-habilidades" data-anime="right">
+          <div class="card habilidade1">
+            <h2>javascript</h2>
+            <i class="fab fa-js-square"></i>
+            <div class="borda-barra" >
+              <div class="barra" id="barra1"></div>
+            </div>
+            <p id="painel1"></p>
+          </div>
+
+          <div class="card habilidade2">
+            <h2>css</h2>
+            <i class="fab fa-css3"></i>
+            <div class="borda-barra" >
+              <div class="barra" id="barra2"></div>
+            </div>
+            <p id="painel2"></p>
+          </div>
+
+          <div class="card habilidade3">
+            <h2>html</h2>
+            <i class="fab fa-html5"></i>
+            <div class="borda-barra" >
+              <div class="barra" id="barra3"></div>
+            </div>
+            <p id="painel3"></p>
+          </div>
+        </div>
+      </section>
+      <section id="projetos">
+        <h1>Projetos</h1>
+      </section>
+    </main>
     
-    <div id="cards">
-      <div class="card-itens" id="cards1">
-        <p>Html5</p>
-        <i class="fab fa-html5"></a></i>
-        <div class="progPrimary" id="progPrimary1">
-          <div class="progSecondary" id="progSecondary1"></div>
-        </div>
-        <p id="nivelProg1"></p>
-      </div>
-
-      <div class="card-itens" id="cards2">
-        <p>css3</p>
-        <i class="fab fa-css3-alt"></i>
-        <div class="progPrimary" id="progPrimary2">
-          <div class="progSecondary" id="progSecondary2"></div>
-        </div>
-        <p id="nivelProg2"></p>
-      </div>
-
-      <div class="card-itens" id="cards3">
-        <p>javaScript</p>
-        <i class="fab fa-js"></i>
-        <div class="progPrimary" id="progPrimary3">
-          <div class="progSecondary" id="progSecondary3"></div>
-        </div>
-        <p id="nivelProg3"></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projetos" class="projetos">
-    <div id="titulo-projetos">
-      <h1>Projetos</h1>
-    </div>
-
-    <div id="card-projetos" class="card-projetos">
-      <figure class="cards">
-        <img src="img/imgAmostra.PNG" alt="projeto">
-        <a href="https://jailsonaraujo.github.io/tabuadaAleatoria/"></a>
-      </figure>
-
-      <figure class="cards">
-        <img src="img/imgCal.PNG" alt="projeto">
-      </figure>
-    </div>
-  </section>
-
-  <footer id="rodape">
-    <h1>Contato</h1>
-    <div id="rede-sociais">
-      <a href="https://www.facebook.com/jaison.araujo.372/"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.linkedin.com/in/jailson-araujo-29a754206/"><i class="fab fa-linkedin-in"></i></a>
-      <a href=""><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/jailsonaraujo"><i class="fab fa-github"></i></a>
-      <a href=""><i class="fab fa-whatsapp"></i></a>
-    </div>
-    <p>Antonio Jailson Araujo da Costa</p>
-  </footer>
+  </div>
   <script src="script/script.js"></script>
 </body>
 </html>
