@@ -5,7 +5,7 @@
     margin: 0;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .container-principal-menu{
     width: 100%;
@@ -70,7 +70,6 @@ body{
 }
 .img-perfil{
     position:relative;
-    z-index: 1;
     width: 9rem;
     height: 9rem;
 }
@@ -97,6 +96,58 @@ body{
     font-weight: 300;
 }
 
+/* redes sociais**************************************** */
+.rede-sociais{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2.5rem 0;
+    position: absolute;
+    z-index: 1;
+}
+.rede-sociais i{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    background-color: #777;
+    color: #fff;
+    padding: 1.1rem;
+    border-radius: 50%;
+    margin: .6rem;
+}
+
+/* seção sobre-me **************************************************************** */
+.sobre-me{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+    background-color: #fff;
+}
+.container-informacoes{
+    width: 85%;
+    height: auto;
+    padding: 1rem 0;
+    box-shadow: 0rem 0rem 1.5rem #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto-descricao{
+    width: 45%;
+    height: auto;
+    border: solid 1px;
+    
+}
+.informacao-adicionais{
+    border: solid 1px;
+    width: 45%;
+    height: auto;
+}
 @media screen and (max-width: 760px){
     .nav-menu{
         flex-direction: row;
@@ -144,7 +195,4 @@ body{
         font-family: Ubuntu;
         font-size: 1.3rem;
     }
-}
-@media screen and (max-width: 760px){
-    
 }
