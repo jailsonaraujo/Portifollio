@@ -1,250 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,400;1,700&family=Rubik:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,500;1,400;1,500;1,700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Rubik:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Rubik:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,500;1,400;1,500;1,700&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
-nav{
+
+.container-principal{
+    max-width: 100%;
+    height: auto;
+    border: solid 1px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+/* formatação do menu lateral********************************************** */
+.menu-lateral{
     width: 30%;
     height: 100vh;
     background-color: #335384;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    float: left;
-    position: fixed;
+    font-family: Roboto;
+    color: #FFF;
 }
-
-#img-container{
-    width: 40%;
-    height: 13rem;
-    border: solid 5px #777;
-    border-radius: 10px;
+.imagem-perfil{
+    width: 35%;
+    height: 10rem;
+    border: solid 3px #777;
 }
-#img-container img{
+.foto-perfil{
     width: 100%;
     height: 100%;
-    border-radius: 8px;
 }
-
-/* contatos*************************************************************** */
-#contatos{
+.contatos{
     width: 90%;
-    height:auto;
-    color: #fff;
-    font-family: Roboto;
-    font-weight: 100;
-}
-#contatos h1{
-    font-family: Roboto;
-    font-weight: 600;
-    letter-spacing: .3rem;
-    text-transform: uppercase;
-}
-#contatos ul li{
     margin-top: 1rem;
+}
+.contatos h2{
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+    margin-bottom: .7rem;
+}
+.contatos li{
     list-style: none;
 }
-#contatos ul li i{
-    font-size: 1.5rem; 
-    margin-left: 1.5rem;
-}
-#contatos ul li a{
+.contatos li a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     color: #fff;
     text-decoration: none;
-    font-family: Roboto;
-    font-weight: 400;
-    margin-left: 1rem;
-}
-
-/* historico academico*************************************************************** */
-#h-academico{
-    width: 90%;
-    height:auto;
-    color: #fff;
-    font-family: Roboto;
-}
-#h-academico h1{
-    font-family: Roboto;
-    font-weight: 600;
-    letter-spacing: .3rem;
-    text-transform: uppercase;
-}
-#h-academico ul li{
-    margin-top: 1rem;
     margin-left: 1.5rem;
 }
+.contatos li i{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
 
-/* conteudos*************************************************************** */
-#conteudos{
+
+.formacao-academica{
+    width: 90%;
+    margin-top: 1rem;
+}
+.formacao-academica h2{
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+    margin-bottom: .7rem;
+}
+.formacao-academica li{
+    margin-left: 1.5rem;
+    
+}
+
+/* corpo da pagina de conteudos******************************************** */
+.main-conteudos{
     width: 70%;
-    height: 100vh;
-    float: right;
-    position: relative;
-}
-main{
-    width: 100%;
     height: auto;
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-/* cabeçalho da pagina*************************************************************** */
-header{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-}
-header h1{
-    font-family: Ubuntu;
-    font-size: 3rem;
-    color: #335384;
-    width: 80%;
-    position: absolute;
-    top: 16rem;
-    z-index: 1;
-}
-header h3{
-    font-family: Ubuntu;
-    font-size: 2rem;
-    width: 80%;
-    color: #5ba7d1;
-    font-weight: 100;
-    position: absolute;
-    z-index: 1;
-}
-#figura-banner{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    background: -webkit-linear-gradient(right top, #222, #000);
-}
-#figura-banner img{
-    height: 100%;
-    width: 100%;
-    opacity: .1;
-    object-fit: cover;
-}
-/* habilidades*************************************************************** */
-#habilidades{
-    width: 100%;
-    height: auto;
-    padding: 1rem 0;
     background-color: #fff;
-    border-bottom: solid 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#habilidades h1{
-    width: 85%;
-    font-size: 2rem;
-    padding: .5rem 0;
-    text-transform: uppercase;
-    font-family: Roboto;
-    color: #5ba7d1;
-}
-#row-habilidades{
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: auto;
-    /* border: solid 1px; */
-}
-.card{
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-    padding: 30px;
-    margin: 20px;
-    width: 25%;
-    transition: all 0.3s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.habilidade1 i{
-    font-size: 5rem;
-    color: #eee151;
-}
-.habilidade2 i{
-    font-size: 5rem;
-    color: #6d80b9;
-}
-.habilidade3 i{
-    font-size: 5rem;
-    color: #e47759;
-}
-
-/* formatação da barra de progresso dos cards na seção habilidades */
-.borda-barra{
-    width: 100%;
-    height: .5rem;
-    border-radius: 10px;
-    border: solid 2px #777;
-}
-.barra{
-    width: 0%;
-    height: 100%;
-    background-color: #0f0;
-    border-radius: 10px;
-}
-
-/* projetos *************************************************************** */
-#projetos{
-    width: 100%;
-    height: auto;
-    padding: 1rem 0;
-    background-color: #fff;
-    border-bottom: solid 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#projetos h1{
-    border: solid 1px;
-    width: 80%;
-    font-size: 2rem;
-    padding: .5rem 2rem;
-    text-transform: uppercase;
-    font-family: Roboto;
-    color: #5ba7d1;
 }
 
 @media screen and (max-width: 700px) {
-    nav{
-        display: none;
-        height: 100vh;
+    /* formatação do menu lateral********************************************** */
+    .menu-lateral{
+        min-width: 70%;
+        background-color: #335384;
+        position: fixed;
+        z-index: 2;
     }
-
-    #conteudos{
+    .main-conteudos{
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
-}
-
-/* animação com dataset ******************************************* */
-[data-anime]{
-    opacity: 0;
-    transition: 2s;
-}
-
-[data-anime="right"]{
-    transform: translate3d(70px, 0, 0);
-}
-
-[data-anime].animation{
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
 }
