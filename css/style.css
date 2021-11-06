@@ -4,101 +4,96 @@
     padding: 0;
     margin: 0;
 }
-
-.container-principal{
-    max-width: 100%;
+body{
+    overflow: hidden;
+}
+.container-principal-menu{
+    width: 100%;
     height: auto;
     border: solid 1px;
-    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem;
+    position: fixed;
+    z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.nav-menu{
+    border: solid 1px;
+    width: 85%;
+    height: auto;
     display: flex;
     flex-direction: row;
-}
-
-/* formatação do menu lateral********************************************** */
-.menu-lateral{
-    width: 30%;
-    height: 100vh;
-    background-color: #335384;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-family: Roboto;
-    color: #FFF;
+    justify-content: space-between;
+    padding: 1rem 0rem;
 }
-.imagem-perfil{
-    width: 35%;
-    height: 10rem;
-    border: solid 3px #777;
+.nav-menu ul{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.foto-perfil{
-    width: 100%;
-    height: 100%;
-}
-.contatos{
-    width: 90%;
-    margin-top: 1rem;
-}
-.contatos h2{
-    font-family: Roboto;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: .3rem;
-    margin-bottom: .7rem;
-}
-.contatos li{
+.nav-menu ul li{
     list-style: none;
 }
-.contatos li a{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+.nav-menu ul li a{
     color: #fff;
-    text-decoration: none;
-    margin-left: 1.5rem;
-}
-.contatos li i{
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 1rem;
-}
-
-
-.formacao-academica{
-    width: 90%;
-    margin-top: 1rem;
-}
-.formacao-academica h2{
     font-family: Roboto;
-    font-weight: 700;
+    font-size: .9rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: .3rem;
-    margin-bottom: .7rem;
+    text-decoration: none;
+    font-weight: 300;
 }
-.formacao-academica li{
-    margin-left: 1.5rem;
+.btn-amburguer{
+    display: none;
+}
+
+/* formatação perfil *******************************************************/
+.pagina-perfil{
+    width: 100%;
+    height: 80vh;
+    background: -webkit-linear-gradient(top, #777, #000);
+}
+.pagina-perfil img{
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 760px){
+    .nav-menu{
+        flex-direction: row;
+    }
+    .nav-menu ul{
+        display: none;
+        flex-direction: column;
+    }
+    /* botao amburguer*/
+    .btn-amburguer{
+        width: 2.5rem;
+        height: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .btn-amburguer span{
+        border-bottom: solid 5px #222;
+
+    }
+
+    /* formatação perfil *******************************************************/
+    .pagina-perfil{
+        height: 70vh;
+    }
+    .pagina-perfil img{
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 760px){
     
-}
-
-/* corpo da pagina de conteudos******************************************** */
-.main-conteudos{
-    width: 70%;
-    height: auto;
-    background-color: #fff;
-}
-
-@media screen and (max-width: 700px) {
-    /* formatação do menu lateral********************************************** */
-    .menu-lateral{
-        min-width: 70%;
-        background-color: #335384;
-        position: fixed;
-        z-index: 2;
-    }
-    .main-conteudos{
-        width: 100%;
-        height: auto;
-    }
 }
