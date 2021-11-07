@@ -134,19 +134,25 @@ body{
     padding: 1rem 0;
     box-shadow: 0rem 0rem 1.5rem #777;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .texto-descricao{
     width: 45%;
     height: auto;
-    border: solid 1px;
-    
+    font-family: Ubuntu;
+}
+.texto-descricao p, .informacao-adicionais p{
+    font-weight: 300;
 }
 .informacao-adicionais{
-    border: solid 1px;
     width: 45%;
     height: auto;
+    font-family: Ubuntu;
+}
+.informacao-adicionais strong{
+    text-transform: uppercase;
+    font-weight: 500;
 }
 @media screen and (max-width: 760px){
     .nav-menu{
@@ -194,5 +200,19 @@ body{
         text-align: center;
         font-family: Ubuntu;
         font-size: 1.3rem;
+    }
+
+    /* seção sobre-me **************************************************************** */
+    .container-informacoes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-descricao{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .informacao-adicionais{
+        width: 90%;
+        margin-top: 1rem;
     }
 }
