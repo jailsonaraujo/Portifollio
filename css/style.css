@@ -154,6 +154,56 @@ body{
     text-transform: uppercase;
     font-weight: 500;
 }
+
+/* formatação skills**************************************************** */
+.page-skills{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+    background-color: #fff;
+}
+.page-skills h1{
+    font-family: Ubuntu;
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+.container-skills{
+    width: 85%;
+    height: auto;
+    padding: 1rem 0;
+    box-shadow: 0rem 0rem 1.5rem #777;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.grup-skills{
+    width: 45%;
+    height: auto;
+    /* border: solid 1px; */
+    display: block;
+    padding: .4rem 1rem;
+}
+.grup-skills span{
+    font-family: Rubik;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #3ab13a;
+}
+.barra{
+    width: 100%;
+    height: .3rem;
+    border: #777 solid 1px;
+}
+.progresso{
+    width: 50%;
+    height: 100%;
+    background-color: #3ab13a;
+}
 @media screen and (max-width: 760px){
     .nav-menu{
         flex-direction: row;
@@ -214,5 +264,28 @@ body{
     .informacao-adicionais{
         width: 90%;
         margin-top: 1rem;
+    }
+
+    /* formatação skills**************************************************** */
+    .page-skills{
+        
+    }
+    .page-skills h1{
+        
+    }
+    .container-skills{
+        
+    }
+    .grup-skills{
+        width: 100%;
+    }
+    .grup-skills span{
+        
+    }
+    .barra{
+
+    }
+    .progresso{
+        
     }
 }
