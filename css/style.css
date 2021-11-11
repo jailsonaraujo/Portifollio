@@ -184,7 +184,6 @@ body{
 .grup-skills{
     width: 45%;
     height: auto;
-    /* border: solid 1px; */
     display: block;
     padding: .4rem 1rem;
 }
@@ -197,12 +196,57 @@ body{
 .barra{
     width: 100%;
     height: .3rem;
-    border: #777 solid 1px;
+    background-color: #afd1b2;
 }
 .progresso{
     width: 50%;
     height: 100%;
-    background-color: #3ab13a;
+    background-color: #378c3f;
+}
+
+/* formatação page-portifolio **************************** */
+.page-portifolio{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+}
+.container-cards-portifolio{
+    width: 85%;
+    height: auto;
+    border: solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+.card-portifolio{
+    width: 33rem;
+    height: 23rem;
+    margin: .7rem 0;
+}
+.card-portifolio figure{
+    width: 100%;
+    height: 100%;
+}
+.card-portifolio figure img{
+    width: 100%;
+    height: 100%;
+}
+.figcaption-titulo h1{
+    font-family: Rubik;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-top: -15rem;
+    color: #fff;
+    font-weight: 400;
 }
 @media screen and (max-width: 760px){
     .nav-menu{
@@ -267,25 +311,43 @@ body{
     }
 
     /* formatação skills**************************************************** */
-    .page-skills{
-        
-    }
-    .page-skills h1{
-        
-    }
-    .container-skills{
-        
-    }
     .grup-skills{
         width: 100%;
     }
-    .grup-skills span{
-        
-    }
-    .barra{
+}
 
+@media screen and (max-width: 1320px){
+    /* formatação page-portifolio **************************** */
+    .card-portifolio{
+        width: 30rem;
+        height: 20rem;
     }
-    .progresso{
-        
+    .figcaption-titulo h1{
+        font-family: Rubik;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: -15rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 1200px){
+    /* formatação page-portifolio **************************** */
+    .container-cards-portifolio{
+        /* flex-direction: column; */
+    }
+    .card-portifolio{
+        width: 28rem;
+        height: 18rem;
+    }
+    .figcaption-titulo h1{
+        font-family: Rubik;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: -15rem;
+        color: #fff;
+        font-weight: 400;
     }
 }
