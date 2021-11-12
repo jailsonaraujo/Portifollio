@@ -213,17 +213,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px;
 }
 .container-cards-portifolio{
-    width: 85%;
+    width: 1150px;
     height: auto;
-    border: solid 1px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 1rem 0;
 }
 .card-portifolio{
@@ -316,38 +314,44 @@ body{
     }
 }
 
-@media screen and (max-width: 1320px){
-    /* formatação page-portifolio **************************** */
-    .card-portifolio{
-        width: 30rem;
-        height: 20rem;
-    }
-    .figcaption-titulo h1{
-        font-family: Rubik;
-        font-size: 2rem;
-        width: 100%;
-        text-align: center;
-        margin-top: -15rem;
-        color: #fff;
-        font-weight: 400;
-    }
-}
-@media screen and (max-width: 1200px){
-    /* formatação page-portifolio **************************** */
+@media screen and (max-width: 1156px) {
     .container-cards-portifolio{
-        /* flex-direction: column; */
+        width: 970px;
     }
     .card-portifolio{
         width: 28rem;
-        height: 18rem;
-    }
-    .figcaption-titulo h1{
-        font-family: Rubik;
-        font-size: 2rem;
-        width: 100%;
-        text-align: center;
-        margin-top: -15rem;
-        color: #fff;
-        font-weight: 400;
+        height: 27rem;
     }
 }
+
+@media screen and (max-width: 916px) {
+    .container-cards-portifolio{
+        width: 775px;
+    }
+    .card-portifolio{
+        width: 23rem;
+        height: 20rem;
+    }
+}
+@media screen and (max-width: 752px) {
+    .page-portifolio{
+       
+    }
+    .container-cards-portifolio{
+        width: 640px;
+    }
+    .card-portifolio{
+        width: 18.5rem;
+        height: 20rem;
+    }
+}
+@media screen and (max-width: 604px) {
+    .container-cards-portifolio{
+        width: 85%;
+    }
+    .card-portifolio{
+        width: 100%;
+        height: 20rem;
+    }
+}
+
