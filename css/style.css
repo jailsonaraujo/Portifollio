@@ -312,6 +312,7 @@ background-color: #378c3f;
 	font-family: Rubik;
 	text-transform: uppercase;
 	font-weight: 100;
+	text-align: center;
 }
 .mes-eperiencia h3,
 .mes-formacao h3{
@@ -347,84 +348,15 @@ background-color: #378c3f;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
+	
 }
-
-/* page Formação **************************************************** */
-/* .page-formacao{
-	width: 100%;
-	height: auto;
-	background-color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.page-formacao h1{
-	font-family: Ubuntu;
-	font-size: 2rem;
-	padding: 1.5rem 0;
-}
-.container-formacao{
-	border: solid 1px;
-	width: 1100px;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.mes-formacao{
-	width: 25%;
-	background-color: #378c3f;
-	color: #fff;
-	height: 12rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-}
-.mes-formacao p{
-	font-family: Rubik;
-	text-transform: uppercase;
-	font-weight: 100;
-}
-.mes-formacao h3{
-	font-family: Rubik;
-	text-transform: uppercase;
-	font-size: 1.6rem;
-	font-weight: 300;
-	text-align: center;
-}
-.informacoes-formacao{
-	background-color: #fff;
-	color: #222;
-	width: 70%;
-	height: 12rem;
-	padding: 0 1.4rem;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-evenly;
-}
-.informacoes-formacao h2{
-	font-family: Roboto;
-	font-size: 1.6rem;
-	font-weight: 500;
-	color: #222;
-}
-.informacoes-formacao p{
-	color: #222;
-	text-align: justify;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
-} */
 
 @media screen and (max-width: 1204px){
 	.nav-menu,
 	.container-skills,
 	.container-cards-portifolio,
 	.container-informacoes{
-	width: 900px;
+		width: 900px;
 	}
 
 	/* formatação page-portifolio **************************** */
@@ -432,6 +364,11 @@ background-color: #378c3f;
 		width: 27rem;
 		height: 27rem;
 		margin: .7rem 0;
+	}
+
+	.container-experiencia,
+	.container-formacao{
+		width: 900px;
 	}
 }
 
@@ -449,9 +386,9 @@ background-color: #378c3f;
 	}
 
 	/* Botao amburguer******** */
-.btn-amburguer{
-	display: flex;
-}
+	.btn-amburguer{
+		display: flex;
+	}
 
 	/* seção sobre-me **************************************************************** */
 	.container-informacoes{
@@ -468,6 +405,11 @@ background-color: #378c3f;
 		width: 21rem;
 		height: 20rem;
 		margin: .7rem 0;
+	}
+
+	.container-experiencia,
+	.container-formacao{
+	width: 700px;
 	}
 }
 
@@ -502,6 +444,24 @@ background-color: #378c3f;
 		height: 25rem;
 		margin: .7rem 0;
 	}
+
+	.container-experiencia,
+	.container-formacao{
+		width: 500px;
+		height: auto;
+		flex-direction: column;
+	}
+
+	.mes-eperiencia,
+	.mes-formacao{
+		width: 100%;
+	}
+
+	.informacoes-experiencia,
+	.informacoes-formacao{
+		width: 85%;
+		height: auto;
+	}
 }
 
 @media screen and (max-width: 586px){
@@ -534,5 +494,10 @@ background-color: #378c3f;
 		width: 100%;
 		height: 25rem;
 		margin: .7rem 0;
+	}
+
+	.container-experiencia,
+	.container-formacao{
+		width: 85%;
 	}
 }
