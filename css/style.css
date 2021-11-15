@@ -7,6 +7,34 @@ margin: 0;
 body{
 overflow-x: hidden;
 }
+
+/* Animações com data set ******************************** */
+/* menu */
+[data-backGround].corFundo{
+	background-color: #378c3f;
+	transition: 1s;
+}
+
+/* animar seções ***************************************** */
+[data-anime]{
+	opacity: 0;
+	transition: 1s;
+}
+[data-anime="top"]{
+	transform: translate3d(0px, 30px, 0px);
+}
+[data-anime="left"]{
+	transform: translate3d(-50px, 0px, 0px);
+}
+[data-anime="right"]{
+	transform: translate3d(50px, 0px, 0px);
+}
+[data-anime].aparecer{
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+/* secao menu ********************************************* */
 .container-principal-menu{
 width: 100%;
 height: auto;
@@ -96,6 +124,7 @@ position:relative;
 z-index: 1;
 width: 50%;
 height: auto;
+color: #fff;
 }
 .texto-perfil h1{
 font-family: Ubuntu;
@@ -212,9 +241,9 @@ height: .3rem;
 background-color: #afd1b2;
 }
 .progresso{
-width: 50%;
-height: 100%;
-background-color: #378c3f;
+	width: 50%;
+	height: 100%;
+	background-color: #378c3f;
 }
 
 /* formatação page-portifolio **************************** */
@@ -351,6 +380,53 @@ background-color: #378c3f;
 	
 }
 
+/* seção contatos ********************************************** */
+.page-contatos{
+	width: 100%;
+	height: 100vh;
+	background-color: #378c3f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.page-contatos fieldset{
+	width: 400px;
+	height: auto;
+	background-color: #fff;
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.page-contatos h1{
+	font-family: Ubuntu;
+	font-size: 1.5rem;
+}
+
+.page-contatos fieldset form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/* border: solid 1px; */
+}
+.page-contatos fieldset form label{
+	font-family: Roboto;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+.page-contatos fieldset form input{
+	padding: .5rem;
+	font-size: 1.5rem;
+	border: none;
+	border-bottom: 1px dashed;
+	margin-bottom: 1rem;
+	outline: none;
+	font-family: Roboto;
+}
+.page-contatos fieldset form textarea{
+	font-family: Roboto;
+	outline: none;
+}
 @media screen and (max-width: 1204px){
 	.nav-menu,
 	.container-skills,

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <header class="container-principal-menu">
+  <header class="container-principal-menu" data-backGround="cor">
     <nav class="nav-menu">
       <a href="#">Portifolio</a>
 
@@ -70,7 +70,7 @@
     <!-- seção de Skills ****************************************************** -->
     <section class="page-skills">
       <h1>Skills</h1>
-      <div class="container-skills">
+      <div class="container-skills" data-anime="top">
         <div class="grup-skills">
           <span>HTML</span>
           <div class="barra">
@@ -105,7 +105,7 @@
     <section class="page-portifolio">
       <h1>Portifolio</h1>
       <div class="container-cards-portifolio">
-        <div class="card-portifolio">
+        <div class="card-portifolio" data-anime="left">
           <figure>
             <img src="img/img-calculadora.PNG" alt="">
             <figcaption class="figcaption-titulo">
@@ -114,7 +114,7 @@
           </figure>
         </div>
 
-        <div class="card-portifolio">
+        <div class="card-portifolio" data-anime="right">
           <figure>
             <img src="img/img-amostra.PNG" alt="">
             <figcaption class="figcaption-titulo">
@@ -123,7 +123,7 @@
           </figure>
         </div>
 
-        <div class="card-portifolio">
+        <div class="card-portifolio" data-anime="top">
           <figure>
             <img src="img/provedor.JPG" alt="">
             <figcaption class="figcaption-titulo">
@@ -132,7 +132,7 @@
           </figure>
         </div>
 
-        <div class="card-portifolio">
+        <div class="card-portifolio" data-anime="top">
           <figure>
             <img src="img/netFlix.PNG" alt="">
             <figcaption class="figcaption-titulo">
@@ -145,14 +145,14 @@
 
     <!-- section experiencia ************************************************ -->
     <section class="page-experiencia">
-      <h1>Experiência de Trabalho</h1>
+      <h1>Experiência</h1>
       <section class="container-experiencia">
-        <div class="mes-eperiencia">
+        <div class="mes-eperiencia" data-anime="left">
           <p>Outubro 2021 - Novembro 2021</p>
           <h3>Web (Front-end)</h3>
         </div>
 
-        <div class="informacoes-experiencia">
+        <div class="informacoes-experiencia" data-anime="right">
           <h2>Estagiário</h2>
           <p>
             Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique 
@@ -168,12 +168,12 @@
     <section class="page-formacao">
       <h1>Formação Acadêmica</h1>
       <section class="container-formacao">
-        <div class="mes-formacao">
+        <div class="mes-formacao" data-anime="left">
           <p>2018 - 2022</p>
           <h3>Bacharel</h3>
         </div>
 
-        <div class="informacoes-formacao">
+        <div class="informacoes-formacao" data-anime="right">
           <h2>Sistema de Informação</h2>
           <p>
             Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique 
@@ -184,13 +184,13 @@
         </div>
       </section>
 
-      <section class="container-formacao">
+      <section class="container-formacao" data-anime="left">
         <div class="mes-formacao">
           <p>2013 - 2015</p>
           <h3>Ensino Médio técnico</h3>
         </div>
 
-        <div class="informacoes-formacao">
+        <div class="informacoes-formacao" data-anime="right">
           <h2>Técnico em Contabilidade</h2>
           <p>
             Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique 
@@ -200,6 +200,23 @@
           </p>
         </div>
       </section>
+    </section>
+
+    <!-- sção de contatos -->
+    <section class="page-contatos">
+      <fieldset>
+        <h1>Contact me</h1>
+        <form action="">
+          <label for="">Nome</label>
+          <input type="email" name="nome" >
+
+          <label for="">Email</label>
+          <input type="email" name="email">
+
+          <label for="">Menssagen</label>
+          <textarea name="menssagen" id="" cols="30" rows="5"></textarea>
+        </form>
+      </fieldset>
     </section>
   </main>
   <script src="script/script.js"></script>
