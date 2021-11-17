@@ -14,6 +14,14 @@ function valorProg(qtd){
     }
 }
 
+// mostrar menu mobile
+
+document.getElementById("btnAmburguer").addEventListener("click", function(){
+    // var btnAmburguer=document.getElementById("btnAmburguer");
+    // btnAmburguer.style.zIndex="5";
+    document.querySelector(".ul").classList.toggle("menuLateral");
+});
+
 // animar menu
 const targetMenu=document.querySelectorAll('[data-backGround]');
 const targetAnimaSecao=document.querySelectorAll('[data-anime]');

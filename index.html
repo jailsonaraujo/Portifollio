@@ -14,15 +14,16 @@
     <nav class="nav-menu">
       <a href="#">Portifolio</a>
 
-      <ul>
-        <li><a href="#">Sobre me</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">portifolio</a></li>
-        <li><a href="#">experiencia</a></li>
-        <li><a href="#">contatos</a></li>
+      <ul class="ul" id="menu-ul">
+        <li><a href="#sobre">Sobre me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portifolio">portifolio</a></li>
+        <li><a href="#experiencia">experiencia</a></li>
+        <li><a href="#contatos">contatos</a></li>
       </ul>
 
-      <div class="btn-amburguer">
+      <div class="btn-amburguer" id="btnAmburguer">
         <span></span>
         <span></span>
         <span></span>
@@ -34,6 +35,7 @@
     <section class="pagina-perfil">
       <img class="background-perfil" src="img/background_perfil.jpg" alt="">
       <figure class="img-perfil">
+        <a href="#"></a>
         <img class="img-perfil-foto" src="img/jailson.png" alt="jailson">
       </figure>
       <div class="texto-perfil">
@@ -48,7 +50,7 @@
     </div>
 
     <!-- seção sobre-me ******************************************************* -->
-    <section class="sobre-me">
+    <section class="sobre-me" id="sobre">
       <div class="container-informacoes">
         <div class="texto-descricao">
           <h1>Sobre-me</h1><br>
@@ -68,7 +70,7 @@
     </section>
 
     <!-- seção de Skills ****************************************************** -->
-    <section class="page-skills">
+    <section class="page-skills" id="skills">
       <h1>Skills</h1>
       <div class="container-skills" data-anime="top">
         <div class="grup-skills">
@@ -102,7 +104,7 @@
     </section>
 
     <!-- section portifolio ******************************************************** -->
-    <section class="page-portifolio">
+    <section class="page-portifolio" id="portifolio">
       <h1>Portifolio</h1>
       <div class="container-cards-portifolio">
         <div class="card-portifolio" data-anime="left">
@@ -144,7 +146,7 @@
     </section>
 
     <!-- section experiencia ************************************************ -->
-    <section class="page-experiencia">
+    <section class="page-experiencia" id="experiencia">
       <h1>Experiência</h1>
       <section class="container-experiencia">
         <div class="mes-eperiencia" data-anime="left">
@@ -165,7 +167,7 @@
     </section>
 
     <!-- section Formação ************************************************ -->
-    <section class="page-formacao">
+    <section class="page-formacao" id="formacao">
       <h1>Formação Acadêmica</h1>
       <section class="container-formacao">
         <div class="mes-formacao" data-anime="left">
@@ -202,8 +204,8 @@
       </section>
     </section>
 
-    <!-- sção de contatos -->
-    <section class="page-contatos">
+    <!-- seção de contatos -->
+    <section class="page-contatos" id="contatos">
       <fieldset>
         <h1>Contact me</h1>
         <form action="">
@@ -215,6 +217,8 @@
 
           <label for="">Menssagen</label>
           <textarea name="menssagen" id="" cols="30" rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
         </form>
       </fieldset>
     </section>

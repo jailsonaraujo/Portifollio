@@ -56,7 +56,7 @@ align-items: center;
 justify-content: space-between;
 padding: 1rem 0rem;
 }
-.nav-menu ul{
+.nav-menu .ul{
 width: 60%;
 height: auto;
 display: flex;
@@ -74,17 +74,10 @@ text-transform: uppercase;
 text-decoration: none;
 font-weight: 300;
 }
-.btn-amburguer{
-display: none;
-}
+
 /* Botao amburguer******** */
 .btn-amburguer{
 	display: none;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 2rem;
-	height: 1.5rem;
 }
 .btn-amburguer span{
 	border: 1px solid #222;
@@ -95,7 +88,7 @@ display: none;
 .pagina-perfil{
 width: 100%;
 height: 80vh;
-background: -webkit-linear-gradient(top, #777, #000);
+background-color: #000;
 position: relative;
 display: flex;
 flex-direction: column;
@@ -113,11 +106,39 @@ position: absolute;
 position:relative;
 width: 9rem;
 height: 9rem;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .img-perfil-foto{
 width: 100%;
 height: 100%;
 border-radius: 50%;
+position: absolute;
+}
+.img-perfil a::before{
+	content: '';
+	position: absolute;
+	left: -1.1rem;
+	top: -1.1rem;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: #3ab13aaf solid 15px;
+	animation: animarperfil 1.6s infinite linear;
+}
+@keyframes animarperfil {
+	0%{
+		transform: scale(0.6, 0.6);
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1, 1);
+		opacity: 0;
+	}
 }
 .texto-perfil{
 position:relative;
@@ -281,10 +302,17 @@ background-color: #afd1b2;
 .card-portifolio figure{
 	width: 100%;
 	height: 100%;
+	background-color: #000;
+	overflow: hidden;
 }
 .card-portifolio figure img{
 	width: 100%;
 	height: 100%;
+}
+.card-portifolio figure img:hover{
+	transition: all 1s;
+	opacity: .4;
+	transform: scale(1.04);
 }
 .figcaption-titulo h1{
 	font-family: Rubik;
@@ -307,6 +335,7 @@ background-color: #afd1b2;
 	align-items: center;
 	justify-content: center;
 	margin-top: 2rem;
+	margin-bottom: 5rem;
 }
 .page-experiencia h1,
 .page-formacao h1{
@@ -388,6 +417,7 @@ background-color: #afd1b2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 2rem 0;
 }
 .page-contatos fieldset{
 	width: 400px;
@@ -395,12 +425,18 @@ background-color: #afd1b2;
 	background-color: #fff;
 	padding: 2rem;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	border: none;
+	box-shadow: 0rem 0rem 1rem #222;
+	border-radius: 10px;
 }
 .page-contatos h1{
 	font-family: Ubuntu;
 	font-size: 1.5rem;
+	color: #4e4e4e;
+	border-bottom: solid 3px #378c3f;
 }
 
 .page-contatos fieldset form{
@@ -426,6 +462,16 @@ background-color: #afd1b2;
 .page-contatos fieldset form textarea{
 	font-family: Roboto;
 	outline: none;
+}
+button[type="submit"]{
+	padding: .5rem 0;
+	font-family: Ubuntu;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #378c3f;
+	margin-top: 1rem;
+	border-radius: 10px;
+	border: none;
 }
 @media screen and (max-width: 1204px){
 	.nav-menu,
@@ -457,13 +503,34 @@ background-color: #afd1b2;
 	}
 
 	/* menu ****************** */
-	.nav-menu ul{
+	.nav-menu .ul{
 		display: none;
+	}
+	.nav-menu .menuLateral.ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: #378c3f;
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		transition: 2s;
 	}
 
 	/* Botao amburguer******** */
 	.btn-amburguer{
 		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 2rem;
+		height: 1.5rem;
+	}
+	.btn-amburguer:hover{
+		cursor: pointer;
+		scale: 1.1;
 	}
 
 	/* seção sobre-me **************************************************************** */
@@ -574,6 +641,10 @@ background-color: #afd1b2;
 
 	.container-experiencia,
 	.container-formacao{
+		width: 85%;
+	}
+
+	.page-contatos fieldset{
 		width: 85%;
 	}
 }
