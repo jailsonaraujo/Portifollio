@@ -1,3 +1,29 @@
+// Animar nome e titulo cargo
+const nomePessoa=document.getElementById('nome-pessoa')
+const tituloCargo=document.getElementById('titulo-cargo')
+
+function animarNomes(np,tc){
+    // animacção do primeiro elemento
+    let nome = np.innerHTML.split('')
+    nomePessoa.innerHTML=''
+    nome.forEach((letra,id1)=>{
+        setTimeout(()=>{
+            nomePessoa.innerHTML+=letra
+        },100*id1)
+    })
+
+    // animacção do segundo elemento
+    let titulo = tc.innerHTML.split('')
+    tituloCargo.innerHTML=''
+    titulo.forEach((caracter,id2)=>{
+        setTimeout(()=>{
+            tituloCargo.innerHTML+=caracter
+        },100*id2)
+    })
+}
+setInterval(()=>{
+    animarNomes(nomePessoa,tituloCargo)
+},4000)
 // mostrar menu mobile
 
 document.getElementById("btnAmburguer").addEventListener("click", function(){

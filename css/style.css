@@ -56,6 +56,13 @@ align-items: center;
 justify-content: space-between;
 padding: 1rem 0rem;
 }
+
+#nome-portifolio{
+	color: #fff;
+	text-decoration: none;
+	font-family: Ubuntu;
+	font-size: 2em;
+}
 .nav-menu .ul{
 width: 60%;
 height: auto;
