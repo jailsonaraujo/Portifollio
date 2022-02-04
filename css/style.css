@@ -480,6 +480,33 @@ button[type="submit"]{
 	border-radius: 10px;
 	border: none;
 }
+
+/* RODAPÉ DA PÁGINA ********************************************/
+.div-footer-container{
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.div-footer-container > p{
+	margin-top: 1rem;
+}
+.links-footer{
+	width: 150px;
+	height: auto;
+	padding: .5rem .5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.links-footer a i{
+	color: #777;
+	font-size: 2rem;
+}
 @media screen and (max-width: 1204px){
 	.nav-menu,
 	.container-skills,
